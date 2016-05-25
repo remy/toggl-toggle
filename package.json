@@ -1,0 +1,33 @@
+{
+  "name": "toggl-toggle",
+  "description": "Toggles your last Toggl entry",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "scripts": {
+    "cover": "tap --cov --coverage-report=lcov test/*.test.js",
+    "test": "tap test/*.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [
+    "toggl"
+  ],
+  "author": "Remy Sharp",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "proxyquire": "^1.7.9",
+    "sinon": "^1.17.4",
+    "tap": "^5.7.2",
+    "tap-only": "0.0.5",
+    "semantic-release": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remy/toggl-toggle.git"
+  }
+}
